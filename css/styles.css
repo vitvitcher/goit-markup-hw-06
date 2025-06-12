@@ -1,10 +1,60 @@
 body {
     font-family: "Roboto", sans-serif;
     background-color: white;
+    color: #434455;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455
+}
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #4d5ae5;
+}
+
+.logo-header {
+    color: #2e2f42;
 
 }
 
@@ -14,14 +64,6 @@ a {
     line-height: 16px;
     letter-spacing: 0.04em;
     text-decoration: underline;
-}
-
-h1 {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 60px;
-    letter-spacing: 0.02em;
-
 }
 
 .nav-link {
@@ -57,6 +99,7 @@ button {
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
+    line-height: 1.07
 }
 
 .title-button {
@@ -74,55 +117,38 @@ button {
     color: 404bbf;
 }
 
-
-.logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.16667;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #2e2f42;
+.team-section {
+    background: #f4f4fd;
 }
 
-footer {
+.team-title {
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.team-list {
+    background: #fff;
+}
+
+.team-title {
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 400;
     font-size: 16px;
+    background-color: #2e2f42;
+}
+
+.logo-footer {
     color: #f4f4fd;
 }
 
-footer .logo {
+footer p {
     color: #f4f4fd;
-}
-
-.logo-iris {
-    color: #4d5ae5;
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-h3 {
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455
-}
-
-ul {
-    list-style: none;
 }
