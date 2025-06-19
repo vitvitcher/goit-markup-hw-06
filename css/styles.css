@@ -8,6 +8,17 @@ body {
     letter-spacing: 0.02em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+}
+
+
 h1 {
     font-weight: 700;
     font-size: 56px;
@@ -38,6 +49,13 @@ p {
     color: #434455
 }
 
+button {
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
 a {
     font-weight: 400;
     font-size: 12px;
@@ -46,11 +64,73 @@ a {
     text-decoration: underline;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 ul {
     list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+li {
+    margin: 0;
+
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 156px;
+    margin-right: 156px;
+}
+
+
+/* Navigation pannel */
+
+
+.nav-section .container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 76px;
+
+    color: #4d5ae5;
+}
+
+.logo-header {
+    color: #2e2f42;
+
+}
+
+.nav-panel {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-right: 332px;
 }
 
 .nav-link {
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -67,6 +147,12 @@ ul {
     font-style: normal;
 }
 
+.address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
 .contact-link {
     color: #434455;
     font-size: 16px;
@@ -79,42 +165,24 @@ ul {
     color: #404bbf;
 }
 
-.logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-
-    color: #4d5ae5;
-}
-
-.logo-header {
-    color: #2e2f42;
-
-}
-
-
-
-button {
-    cursor: pointer;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-}
+/* Title card */
 
 .title-section {
     background-color: #2e2f42;
     color: #fff;
     text-align: center;
-    line-height: 1.07
+    line-height: 1.07;
+    padding: 188px 0;
+}
+
+.title {
+    margin-bottom: 48px;
 }
 
 .title-button {
     background: #4d5ae5;
     color: inherit;
+    padding: 0;
 }
 
 .title-button:hover,
@@ -122,8 +190,26 @@ button {
     background-color: #404BBF;
 }
 
+/* Positives section */
+
+.positives-section {
+    margin-top: 0;
+    margin-bottom: 120px;
+}
+
+.positives-list {
+    display: flex;
+    gap: 24px;
+}
+
+
+/* Team section */
+
 .team-section {
     background: #f4f4fd;
+    margin-top: 0;
+    margin-bottom: 120px;
+    padding: 120px 0;
 }
 
 .team-title {
@@ -133,6 +219,12 @@ button {
 }
 
 .team-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team-member {
     background: #FFFFFF;
 }
 
@@ -142,12 +234,39 @@ button {
     text-transform: capitalize;
 }
 
+
+/* Portfolio section */
+
+.portfolio-section {
+    margin-top: 0;
+    margin-bottom: 120px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+
+}
+
+.portfolio-list-item {
+    flex-basis: calc((100% - 24px*2) / 3);
+    background-color: #E7E9FC;
+}
+
+
+/* Footer */
+
+
 .footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 400;
     font-size: 16px;
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 
