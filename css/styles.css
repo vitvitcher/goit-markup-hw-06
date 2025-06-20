@@ -258,7 +258,7 @@ li {
 }
 
 .team-list-item {
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    flex-basis: calc((100% - 24px * 3) / 4);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -307,9 +307,11 @@ li {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    margin-bottom: 8px;
 }
 
+.portfolio-text-title {
+    margin-bottom: 8px;
+}
 
 /* Footer */
 
@@ -325,11 +327,13 @@ li {
 }
 
 
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
 
 .logo-footer {
     color: #f4f4fd;
-    display: inline-block;
-    margin-bottom: 16px;
 }
 
 footer p {
