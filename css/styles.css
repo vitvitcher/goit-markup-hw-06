@@ -113,9 +113,12 @@ li {
     color: #4d5ae5;
 }
 
+.nav-container .logo {
+    padding: 24px 0;
+}
+
 .logo-header {
     color: #2e2f42;
-    padding: 24px 0;
     margin-right: 76px;
 }
 
