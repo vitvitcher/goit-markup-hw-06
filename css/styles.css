@@ -82,10 +82,8 @@ li {
 
 .container {
     max-width: 1158px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 156px;
-    margin-right: 156px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .section {
@@ -100,12 +98,7 @@ li {
 
 .nav-container {
     display: flex;
-    flex-direction: row;
-    /* ??? */
-    margin: 0 auto;
-    /* ??? */
-    padding: 0 15px;
-
+    align-items: center;
 }
 
 .logo {
@@ -115,37 +108,38 @@ li {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
+
 
     color: #4d5ae5;
 }
 
 .logo-header {
     color: #2e2f42;
-
+    padding: 24px 0;
+    margin-right: 76px;
 }
 
 .nav-panel {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
 
 .nav-list {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     gap: 40px;
     margin-right: 332px;
 }
 
+
 .nav-link {
-    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .nav-link:hover,
