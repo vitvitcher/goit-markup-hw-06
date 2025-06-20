@@ -88,15 +88,24 @@ li {
     margin-right: 156px;
 }
 
+.section {
+    padding: 120px 0;
+}
 
-/* Navigation pannel */
 
+/* Navigation header */
+.navigation {
+    border-bottom: 1px solid #e7e9fc;
+}
 
-.nav-section .container {
+.nav-container {
     display: flex;
     flex-direction: row;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /* ??? */
+    margin: 0 auto;
+    /* ??? */
+    padding: 0 15px;
+
 }
 
 .logo {
@@ -119,6 +128,7 @@ li {
 .nav-panel {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 
@@ -130,7 +140,7 @@ li {
 }
 
 .nav-link {
-
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -165,7 +175,7 @@ li {
     color: #404bbf;
 }
 
-/* Title card */
+/* S1: Title card */
 
 .title-section {
     background-color: #2e2f42;
@@ -176,6 +186,7 @@ li {
 }
 
 .title {
+    max-width: 496px;
     margin-bottom: 48px;
 }
 
@@ -183,6 +194,12 @@ li {
     background: #4d5ae5;
     color: inherit;
     padding: 0;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+
 }
 
 .title-button:hover,
@@ -190,11 +207,21 @@ li {
     background-color: #404BBF;
 }
 
-/* Positives section */
+/* S2: Positives section */
 
-.positives-section {
-    margin-top: 0;
-    margin-bottom: 120px;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    clip-path: inset(100%);
+
+
 }
 
 .positives-list {
@@ -202,20 +229,26 @@ li {
     gap: 24px;
 }
 
+.positives-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
 
-/* Team section */
+.positives-title {
+    margin-bottom: 8px;
+}
+
+/* S3: Team section */
 
 .team-section {
     background: #f4f4fd;
-    margin-top: 0;
-    margin-bottom: 120px;
-    padding: 120px 0;
+
 }
 
 .team-title {
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -224,35 +257,57 @@ li {
     gap: 24px;
 }
 
+.team-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team-member {
     background: #FFFFFF;
 }
 
-.team-title {
+.team-member-container {
+    padding: 32px 0;
+}
+
+.team-member-title {
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 8px;
 }
 
+.team-member-text {
+    text-align: center;
+}
 
-/* Portfolio section */
+/* S4: Portfolio section */
 
-.portfolio-section {
-    margin-top: 0;
-    margin-bottom: 120px;
+.portfolio-title {
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-
-
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-list-item {
-    flex-basis: calc((100% - 24px*2) / 3);
+    flex-basis: calc((100% - 24px * 2) / 3);
+
+}
+
+.portfolio-text-container {
     background-color: #E7E9FC;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
 
 
@@ -270,14 +325,11 @@ li {
 }
 
 
-.portfolio-title {
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-}
 
 .logo-footer {
     color: #f4f4fd;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 footer p {
