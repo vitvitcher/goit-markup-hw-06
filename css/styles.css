@@ -94,6 +94,10 @@ li {
 /* Navigation header */
 .navigation {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+    ;
 }
 
 .nav-container {
@@ -145,19 +149,22 @@ li {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list-item {
+.nav-list-item:nth-child(1) .nav-link {
     position: relative;
+    color: #404bbf;
 }
 
-.nav-list-item:nth-child(1)::after {
-    display: block;
+.nav-list-item:nth-child(1) .nav-link::after {
     position: absolute;
+    left: 0;
+    bottom: -1px;
     width: 100%;
     height: 4px;
     border-radius: 2px;
     background-color: #404bbf;
     content: "";
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -183,6 +190,7 @@ li {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -193,14 +201,14 @@ li {
 /* S1: Title card */
 
 .title-section {
-    background-size: 1440px;
+    max-width: 1440px;
     background-image:
-        linear-gradient(to bottom,
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url("../images/people-office 1.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+
 
 
     color: #fff;
@@ -224,6 +232,8 @@ li {
     border: none;
     border-radius: 4px;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
 }
 
 .title-button:hover,
@@ -266,12 +276,11 @@ li {
     border-radius: 4px;
     background-color: #F4F4FD;
     border: 1px solid #8E8F99;
+    margin-bottom: 8px;
 }
 
 .positives-icon {
     fill: #2E2F42;
-    width: 64px;
-    height: 64px;
 }
 
 .positives-title {
@@ -336,24 +345,40 @@ li {
 .social-link-container {
     width: 40px;
     height: 40px;
-    background-color: #4D5AE5;
+
+}
+
+.social-link-container .social-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.social-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 
+
+
 }
 
-.social-link-container:hover {
+.social-link:hover,
+.social-link:focus {
     background-color: #404BBF;
 }
 
+
+
 .team-socials-icon {
-    width: 16px;
-    height: 16px;
 
     fill: #F4F4FD;
 }
+
+
 
 /* S4: Portfolio section */
 
@@ -373,12 +398,14 @@ li {
 
 .portfolio-list-item {
     flex-basis: calc((100% - 24px * 2) / 3);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover {
-    box-shadow: 0px 1px 6px 0 #2E2F42,
-        0px 1px 1px 0 #2E2F42,
-        0px 2px 1px 0 #2E2F42;
+    box-shadow:
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-box {
@@ -386,16 +413,21 @@ li {
     overflow: hidden;
 }
 
+
 .portfolio-overlay {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
     height: 100%;
-    background-color: #3f51b5;
-
+    width: 100%;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .portfolio-box:hover .portfolio-overlay {
@@ -427,6 +459,7 @@ li {
 
 .footer-items-container {
     display: flex;
+    align-items: baseline
 }
 
 .footer-misc {
@@ -447,29 +480,42 @@ li {
     width: 264px;
 }
 
+.socials-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
 .footer-socials {
     display: flex;
     gap: 16px;
 }
 
+
 .footer-social-link-container {
-    background-color: 4D5AE5;
     width: 40px;
     height: 40px;
-    background-color: #3f51b5;
+}
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
     border-radius: 50%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer-social-link-container:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
     background-color: #31D0AA;
 }
 
 .footer-socials-icon {
-    width: 16px;
-    height: 16px;
-
     fill: #F4F4FD;
 }
