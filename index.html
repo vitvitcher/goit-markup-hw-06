@@ -48,7 +48,7 @@
         <section class="section title-section">
             <div class="container">
                 <h1 class="title">Effective Solutions for Your Business</h1>
-                <button type="button" class="title-button">Order Service</button>
+                <button type="button" class="title-btn">Order Service</button>
             </div>
         </section>
 
@@ -394,7 +394,7 @@
                     growth solutions.</p>
             </div>
             <div class="footer-socials-container">
-                <p class="socials-title">Social media</p>
+                <p class="footer-text-title">Social media</p>
                 <ul class="footer-socials">
                     <li class="footer-social-link-container">
                         <a href="" class="footer-social-link">
@@ -426,8 +426,51 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="footer-form-container">
+                <p class="footer-text-title">Subscribe</p>
+                <form class="footer-form">
+                    <input class="footer-form-input-email" type="email" name="email-input" placeholder="E-mail">
+                    <button type="submit" class="footer-form-btn">Subscribe
+                        <svg class="footer-form-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
+
+    <div class="contact-form-overlay is-open">
+        <div class="modal">
+            <button type="button" class="modal-exit-btn">
+                <svg class="modal-exit-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <label class="form-label">Name
+                    <input type="text" class="modal-form-input">
+                </label>
+                <label class="form-label">Phone
+                    <input type="tel" class="modal-form-input">
+                </label>
+                <label class="form-label">Email
+                    <input type="email" class="modal-form-input">
+                </label>
+                <label class="form-label">Comment
+                    <textarea rows="3" class="modal-form-input"></textarea>
+                </label>
+                <label class="form-label">
+                    <input type="checkbox" class="modal-form-input"> I accept the terms and conditions of the <a
+                        href="#" class="pp-link">Privacy
+                        Policy</a>
+                </label>
+                <button type="submit" class="modal-submit-btn">Send</button>
+            </form>
+        </div>
+    </div>
 
 </body>
 
