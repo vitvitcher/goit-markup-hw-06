@@ -233,8 +233,8 @@ li {
     ;
 }
 
-.title-button:hover,
-.title-button:focus {
+.title-btn:hover,
+.title-btn:focus {
     background-color: #404BBF;
 }
 
@@ -771,8 +771,9 @@ li {
     color: #FFFFFF;
     border: none;
     border-radius: 4px;
+    display: block;
+    margin: auto 96px auto 95px;
     min-width: 169px;
-    align-self: center;
     height: 56px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
