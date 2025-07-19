@@ -957,7 +957,8 @@ li {
     /* S2: Positives section */
 
     .positives-list {
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 72px;
     }
 
     .positives-list-item {
@@ -966,7 +967,8 @@ li {
 
     /* S3: Team section */
     .team-list {
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 64px;
         padding: 0 96px;
     }
 
