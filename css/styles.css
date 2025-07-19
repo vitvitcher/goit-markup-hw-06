@@ -1155,3 +1155,9 @@ li {
         gap: 24px;
     }
 }
+
+@media (min-resolution: 192dpi) {
+    .title-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office1@2x.jpg);
+    }
+}
